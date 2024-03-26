@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.market-banner {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.market-info {
+  text-align: center;
+}
+
+.market-label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.market-value {
+  font-size: 18px;
+  margin-top: 5px;
+  color: green;
+}
+
+.market-change {
+  color: red;
+}
+
+.market-change-percent {
+  font-size: 12px;
+}
+
+.market-change-percent::before {
+  content: "(";
+}
+
+.market-change-percent::after {
+  content: "%)";
+}
