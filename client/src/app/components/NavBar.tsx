@@ -21,9 +21,9 @@ const NavBar = () => {
                 </Link>
                 </NavbarItem>
                 <NavbarItem>
-                {/* <Link color="foreground" href="#">
-                    Integrations
-                </Link> */}
+                <Link color="foreground" href="/earnings">
+                    Earnings
+                </Link>
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
