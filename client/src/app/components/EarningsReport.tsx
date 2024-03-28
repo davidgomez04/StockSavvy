@@ -28,13 +28,24 @@ export default function EarningsReport() {
 
   return (
     <div>
-        <Button color="primary">
-            Button
-        </Button>
-        <Calendar 
-            onChange={onChange} 
-            value={dateValue} 
-        /> 
+        <div className="earnings-grid">
+        {Object.entries(data).map(([indexName, indexData], index) => (
+            <div className="earnings-item" key={index}>
+                <div className="company-name">{indexData.company_name }</div>
+                <div className="ticker-symbol">{indexData.ticker_symbol }</div>
+                <div className="event-name">{indexData.event_name }</div>
+                <div className="call-time">{indexData.earnings_call_time }</div>
+            </div>
+        ))}
+      </div>
     </div>
     );
 }
+
+{/* <Button color="primary">
+    Button
+</Button>
+<Calendar 
+    onChange={onChange} 
+    value={dateValue} 
+/>  */}

@@ -40,3 +40,25 @@
 .market-change-percent::after {
   content: "%)";
 }
+
+.earnings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .earnings-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .earnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .earnings-item {
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+  }

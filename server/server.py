@@ -26,7 +26,8 @@ def extractEarnings(data):
 #next.js, fast-api, typescript
 @app.route('/api/getEarningsData', methods=['GET'])
 def getEarningsData():
-    selected_date = request.args.get('day')
+    #selected_date = request.args.get('day')
+    selected_date = '2024-03-29'
     options = Options()
     options.add_argument("--headless")
     options.add_argument('log-level=3')
